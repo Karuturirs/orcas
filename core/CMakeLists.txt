@@ -10,14 +10,17 @@ include_directories(inc)
 
 set(HEADER_FILES
   inc/encode.hpp
+  inc/utils.hpp
 )
 
 set(SOURCES
   src/encode.cpp
+  src/utils.cpp
   src/welcome.cpp
+
 )
 
 add_executable(
- core
+ orcas-core
  ${SOURCES} ${HEADER_FILES}
 )
